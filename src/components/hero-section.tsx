@@ -39,9 +39,9 @@ export function HeroSection() {
         <motion.div 
           initial={{ opacity: 0, y: -20 }}
           animate={{ opacity: 1, y: 0 }}
-          className="mb-8 inline-flex items-center p-[1px] rounded-full bg-white/10 backdrop-blur-sm border border-white/20"
+          className="mb-4 md:mb-8 inline-flex items-center p-[1px] rounded-full bg-white/10 backdrop-blur-sm border border-white/20"
         >
-          <div className="px-4 py-1 rounded-full bg-white/90 backdrop-blur-md text-[10px] font-bold tracking-widest uppercase text-slate-900">
+          <div className="px-3 md:px-4 py-1 rounded-full bg-white/90 backdrop-blur-md text-[9px] md:text-[10px] font-bold tracking-widest uppercase text-slate-900">
             Terceirização e Consultoria
           </div>
         </motion.div>
@@ -51,13 +51,13 @@ export function HeroSection() {
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ delay: 0.2 }}
-          className="flex flex-col gap-2 md:gap-4 leading-[0.9]"
+          className="flex flex-col gap-1 md:gap-4 leading-[0.9]"
         >
           <span className="font-barlow font-light text-white text-[32px] md:text-[64px] leading-[0.9]">
             Terceirize suas
           </span>
-          <span className="font-lora italic text-[#00AEEF] text-[40px] md:text-[72px] leading-[0.9] drop-shadow-md">
-            rotinas financeiras
+          <span className="font-lora italic text-[#00AEEF] text-[38px] md:text-[72px] leading-[0.9] drop-shadow-md">
+            Rotinas Financeiras
           </span>
         </motion.h1>
 
@@ -66,12 +66,12 @@ export function HeroSection() {
           initial={{ opacity: 0 }}
           animate={{ opacity: 1 }}
           transition={{ delay: 0.4 }}
-          className="mt-6 md:mt-12 max-w-2xl flex flex-col gap-4 md:gap-6 text-white/90"
+          className="mt-4 md:mt-12 max-w-2xl flex flex-col gap-3 md:gap-6 text-white/90"
         >
-          <h2 className="text-xl md:text-2xl font-barlow font-medium text-white drop-shadow-sm">
+          <h2 className="text-[1.125rem] md:text-2xl font-barlow font-medium text-white drop-shadow-sm leading-snug">
             Saia do mundo Operacional para o estratégico!
           </h2>
-          <p className="font-barlow text-base md:text-lg leading-relaxed text-white/80">
+          <p className="font-barlow text-[0.9375rem] md:text-lg leading-relaxed text-white/80">
             Tenha mais tempo para gerar mais dinheiro, deixe sua empresa regularizada e com clareza dos resultados.
           </p>
         </motion.div>

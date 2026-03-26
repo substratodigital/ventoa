@@ -26,14 +26,14 @@ export function NavbarVentoa() {
 
   return (
     <nav 
-      className={`fixed top-0 left-0 w-full z-50 flex justify-center px-6 py-4 md:py-6 transition-all duration-300 ${
+      className={`fixed top-0 left-0 w-full z-[999] flex justify-center px-6 py-4 md:py-6 transition-all duration-300 ${
         scrolled ? "bg-[#1A2B47]/90 backdrop-blur-md shadow-lg" : "bg-transparent"
       }`}
     >
       <div className="w-full max-w-7xl flex items-center justify-between relative">
         
         {/* Logo */}
-        <div className="flex items-center gap-2 z-50">
+        <div className="flex items-center gap-2 z-[1000]">
           <motion.a 
             href="#"
             initial={{ opacity: 0 }}
@@ -78,7 +78,7 @@ export function NavbarVentoa() {
         </div>
 
         {/* Mobile Menu Toggle */}
-        <div className="lg:hidden z-50">
+        <div className="lg:hidden z-[1000]">
           <button 
             onClick={() => setIsOpen(!isOpen)}
             className="text-white p-2 hover:bg-white/10 rounded-full transition-colors"
@@ -95,7 +95,7 @@ export function NavbarVentoa() {
               animate={{ opacity: 1, x: 0 }}
               exit={{ opacity: 0, x: "100%" }}
               transition={{ type: "spring", damping: 25, stiffness: 200 }}
-              className="fixed inset-0 bg-[#1A2B47] flex flex-col items-center justify-center gap-8 lg:hidden z-40"
+              className="fixed inset-0 bg-[#0F1C36] flex flex-col items-center justify-center gap-8 lg:hidden z-[990]"
             >
               {menuItems.map((item) => (
                 <a
