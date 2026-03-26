@@ -53,10 +53,10 @@ export function HeroSection() {
           transition={{ delay: 0.2 }}
           className="flex flex-col gap-2 md:gap-4 leading-[0.9]"
         >
-          <span className="font-barlow font-light text-white text-[40px] md:text-[64px] leading-[0.9]">
+          <span className="font-barlow font-light text-white text-[32px] md:text-[64px] leading-[0.9]">
             Terceirize suas
           </span>
-          <span className="font-lora italic text-[#00AEEF] text-[48px] md:text-[72px] leading-[0.9] drop-shadow-md">
+          <span className="font-lora italic text-[#00AEEF] text-[40px] md:text-[72px] leading-[0.9] drop-shadow-md">
             rotinas financeiras
           </span>
         </motion.h1>
@@ -66,7 +66,7 @@ export function HeroSection() {
           initial={{ opacity: 0 }}
           animate={{ opacity: 1 }}
           transition={{ delay: 0.4 }}
-          className="mt-10 md:mt-12 max-w-2xl flex flex-col gap-6 text-white/90"
+          className="mt-6 md:mt-12 max-w-2xl flex flex-col gap-4 md:gap-6 text-white/90"
         >
           <h2 className="text-xl md:text-2xl font-barlow font-medium text-white drop-shadow-sm">
             Saia do mundo Operacional para o estratégico!
@@ -81,11 +81,11 @@ export function HeroSection() {
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ delay: 0.6 }}
-          className="mt-14 flex flex-col sm:flex-row gap-4 w-full sm:w-auto"
+          className="mt-8 md:mt-14 flex flex-col sm:flex-row gap-4 w-full sm:w-auto"
         >
-          <button className="px-8 py-5 w-full sm:w-auto rounded-[12px] bg-[#00AEEF] text-white font-barlow text-[1.125rem] font-bold transition-all hover:bg-[#00AEEF]/90 hover:scale-105 shadow-lg">
+          <a href="#contato" className="flex items-center justify-center px-8 py-4 md:py-5 w-full sm:w-auto rounded-[12px] bg-[#00AEEF] text-white font-barlow text-[1.125rem] font-bold transition-all hover:bg-[#00AEEF]/90 hover:scale-105 shadow-lg">
             Solicitar Proposta
-          </button>
+          </a>
         </motion.div>
 
       </div>

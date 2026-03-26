@@ -16,7 +16,7 @@ export function WhatsAppButton() {
       initial={{ scale: 0, opacity: 0 }}
       animate={{ scale: 1, opacity: 1 }}
       transition={{ delay: 1, type: "spring", stiffness: 200, damping: 20 }}
-      className="fixed bottom-6 right-6 md:bottom-10 md:right-10 z-[100] w-14 h-14 md:w-16 md:h-16 flex items-center justify-center rounded-full bg-[#25D366] text-white shadow-xl hover:bg-[#20bd5a] transition-colors"
+      className="fixed bottom-4 right-4 md:bottom-10 md:right-10 z-[100] w-14 h-14 md:w-16 md:h-16 flex items-center justify-center rounded-full bg-[#25D366] text-white shadow-xl hover:bg-[#20bd5a] transition-colors"
       style={{ boxShadow: "0 0 20px rgba(37, 211, 102, 0.4)" }}
     >
       {/* CSS animado nativo para o efeito "pulse" no background */}

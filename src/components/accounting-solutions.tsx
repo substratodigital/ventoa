@@ -74,7 +74,7 @@ export function AccountingSolutions() {
                 </div>
 
                 <div className="flex flex-col gap-4">
-                  <h3 className="text-[2rem] md:text-[2.5rem] font-medium font-lora text-[#1A2B47] leading-[0.9] tracking-tight">
+                  <h3 className="text-[1.75rem] md:text-[2.5rem] font-medium font-lora text-[#1A2B47] leading-[0.9] tracking-tight break-words hyphens-auto">
                     {step.title}
                   </h3>
                   <p className="text-[1.125rem] text-[#4D4D4D] font-barlow leading-relaxed max-w-lg">

@@ -30,7 +30,6 @@ export function PricingSection() {
     },
     {
       name: "Prata",
-      badge: "Mais Escolhido",
       description: "Solução completa de ponta a ponta",
       items: [
         "Todos os itens do Bronze +",

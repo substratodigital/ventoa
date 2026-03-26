@@ -30,7 +30,7 @@ export default function RootLayout({
       className={`${barlow.variable} ${lora.variable} antialiased`}
       style={{ fontSize: "18px" }}
     >
-      <body className="min-h-screen flex flex-col font-barlow text-[1rem] leading-relaxed">{children}</body>
+      <body className="min-h-screen flex flex-col font-barlow text-[1rem] leading-relaxed overflow-x-hidden">{children}</body>
     </html>
 
   );

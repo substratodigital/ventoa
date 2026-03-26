@@ -50,7 +50,7 @@ export function FooterContact() {
         </div>
 
         {/* Formulário Esquerda - Contato Rápido */}
-        <div className="order-1 lg:order-2 lg:w-1/2 bg-white/5 p-8 md:p-10 rounded-2xl border border-white/10 flex flex-col gap-6 h-fit">
+        <div className="order-1 lg:order-2 lg:w-1/2 bg-white/5 p-5 md:p-10 rounded-2xl border border-white/10 flex flex-col gap-6 h-fit">
           
           <div className="flex flex-col gap-2">
             <h2 className="text-[2rem] font-heading font-bold text-white tracking-tighter leading-[0.9]">Solicite uma proposta online</h2>
