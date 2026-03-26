@@ -1,35 +1,31 @@
 import React from "react";
-import { Search, FileText, Settings2, RotateCw } from "lucide-react";
+import { Search, Briefcase, TrendingUp, MonitorCheck } from "lucide-react";
 
 export function MethodologyTimeline() {
   const steps = [
     {
       number: "1",
       title: "DIAGNÓSTICO",
-      duration: "1 Hora",
-      desc: "Levantamento de perfil, dores e certidões para relatório prévio.",
+      desc: "Avaliação gratuita do nível maturidade da sua organização. Avaliamos quais são os gaps que estão prejudicando sua empresa.",
       icon: Search
     },
     {
       number: "2",
-      title: "PROPOSTA",
-      duration: "Máximo 24 Horas",
-      desc: "Apresentação da solução detalhada e custos.",
-      icon: FileText
+      title: "Terceirização Financeira",
+      desc: "Ganhe tempo e mantenha o foco em seu negócio, garantindo precisão, conformidade e eficiência.",
+      icon: Briefcase
     },
     {
       number: "3",
-      title: "EXECUÇÃO",
-      duration: "Imediato",
-      desc: "Aceite da proposta e início do plano de ação com ferramentas de controle.",
-      icon: Settings2
+      title: "Consultoria Financeira",
+      desc: "Modelagem/ revisão de processos. Margem de lucro, revisão/definição de preços, consultoria tributária e regime adequado.",
+      icon: TrendingUp
     },
     {
       number: "4",
-      title: "ENTREGA",
-      duration: "Contínuo",
-      desc: "Ciclo contínuo conforme o serviço contratado.",
-      icon: RotateCw
+      title: "Otimização ERP",
+      desc: "Assessoramos sua empresa na escolha, correções ou substituição da ferramenta de gestão que melhor se encaixa às necessidades da organização.",
+      icon: MonitorCheck
     }
   ];
 
@@ -38,11 +34,11 @@ export function MethodologyTimeline() {
       <div className="max-w-7xl mx-auto flex flex-col gap-12">
         
         <div className="flex flex-col items-center text-center gap-4">
-          <h2 className="text-[2rem] md:text-[2.5rem] font-bold font-heading text-[#1A2B47] tracking-tighter">
+          <h2 className="text-[2rem] md:text-[2.5rem] font-bold font-heading text-[#1A2B47] tracking-tighter leading-[0.9]">
             Etapas da Implantação (Metodologia)
           </h2>
-          <p className="text-[#4D4D4D] font-lora text-[1rem] max-w-2xl">
-            Uma transição suave e controlada. Entenda como integramos nossa rotina BPO ao fluxo atual do seu negócio.
+          <p className="text-[#4D4D4D] font-barlow text-[1rem] max-w-3xl leading-relaxed">
+            Nossos processos seguem um padrão de automação das rotinas, o controle não fica internalizado na cabeça de um colaborador, ele está estruturado através de ferramentas seguras de gestão de processos. Cada cliente tem seu espaço e seus dados estão muito bem guardados e seguros.
           </p>
         </div>
 
@@ -50,7 +46,7 @@ export function MethodologyTimeline() {
           {steps.map((step) => {
             const Icon = step.icon;
             return (
-              <li key={step.number} className="relative flex flex-col items-center text-center gap-4">
+               <li key={step.number} className="relative flex flex-col items-center text-center gap-4">
                 
                 {/* Conector Mobile Vertical */}
                 <div className="absolute left-1/2 top-0 bottom-0 w-px bg-[#E5E7EB] -z-10 md:hidden" />
@@ -70,10 +66,7 @@ export function MethodologyTimeline() {
                       {step.title}
                     </h3>
                   </div>
-                  <span className="text-[0.875rem] font-semibold text-[#00AEEF]">
-                    {step.duration}
-                  </span>
-                  <p className="text-[0.9375rem] text-[#4D4D4D] font-lora leading-relaxed mt-1">
+                  <p className="text-[0.9375rem] text-[#4D4D4D] font-barlow leading-relaxed mt-1">
                     {step.desc}
                   </p>
                 </div>

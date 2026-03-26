@@ -1,15 +1,17 @@
 import type { Metadata } from "next";
-import { Inter, Lora } from "next/font/google";
+import { Barlow, Lora } from "next/font/google";
 import "./globals.css";
 
-const interSans = Inter({
-  variable: "--font-inter-sans",
+const barlow = Barlow({
+  variable: "--font-barlow",
   subsets: ["latin"],
+  weight: ["300", "400", "500", "600", "700"],
 });
 
-const loraSerif = Lora({
-  variable: "--font-lora-serif",
+const lora = Lora({
+  variable: "--font-lora",
   subsets: ["latin"],
+  style: ["normal", "italic"],
 });
 
 export const metadata: Metadata = {
@@ -25,10 +27,11 @@ export default function RootLayout({
   return (
     <html
       lang="pt-BR"
-      className={`${interSans.variable} ${loraSerif.variable} antialiased`}
+      className={`${barlow.variable} ${lora.variable} antialiased`}
       style={{ fontSize: "18px" }}
     >
-      <body className="min-h-screen flex flex-col font-lora text-[1rem] leading-relaxed">{children}</body>
+      <body className="min-h-screen flex flex-col font-barlow text-[1rem] leading-relaxed">{children}</body>
     </html>
+
   );
 }

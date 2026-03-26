@@ -6,15 +6,15 @@ import Image from "next/image";
 
 export function FooterContact() {
   return (
-    <footer className="bg-white pt-20 pb-12 px-6 md:px-12 border-t border-[#E5E7EB]">
-      <div className="max-w-7xl mx-auto grid grid-cols-1 lg:grid-cols-2 gap-16 lg:gap-24">
+    <footer className="bg-[#1A2B47] pt-20 pb-12 px-6 md:px-12 border-t border-white/10 text-white">
+      <div className="max-w-7xl mx-auto flex flex-col lg:flex-row gap-16 lg:gap-24">
         
         {/* Info Direita - Experiência e Autoridade GEO */}
-        <div className="flex flex-col gap-6 order-2 lg:order-1">
+        <div className="flex flex-col gap-6 lg:w-1/2 order-2 lg:order-1">
           <div className="flex items-center gap-4">
-             <div className="w-[12rem] h-10 relative">
+             <div className="w-[12rem] h-12 relative">
                 <Image 
-                  src="/Logo_ventoa.svg" 
+                  src="/LOGO_HORIZONTAL_ventoa_white.svg" 
                   alt="Ventoa Financial Logo" 
                   fill 
                   className="object-contain object-left"
@@ -22,46 +22,46 @@ export function FooterContact() {
              </div>
           </div>
           
-          <p className="text-[1.125rem] text-[#4D4D4D] font-lora max-w-md leading-relaxed">
-            Oferecemos soluções ajustadas para sua empresa, acompanhando de perto sua gestão rumo ao próximo nível estratégico.
+          <p className="text-[1.125rem] text-white/80 font-barlow max-w-md leading-relaxed">
+            Oferecemos soluções ajustadas para sua empresa, acompanhando de perto sua gestão.
           </p>
 
-          <div className="flex items-start gap-5 mt-2 p-5 rounded-2xl bg-[#F2F2F2]/50 border border-[#E5E7EB]">
-            <div className="w-16 h-16 relative rounded-full overflow-hidden shrink-0 border-2 border-[#1A2B47]">
+          <div className="flex items-start gap-5 mt-4 p-6 rounded-2xl bg-white/5 border border-white/10">
+            <div className="w-16 h-16 relative rounded-full overflow-hidden shrink-0 border-2 border-[#00AEEF]">
                <Image src="/Otavio.webp" alt="Otávio Duarte" fill className="object-cover" />
             </div>
             <div className="flex flex-col gap-1">
-              <h3 className="font-bold text-[1.125rem] font-heading text-[#1A2B47]">Otávio Duarte</h3>
+              <h3 className="font-bold text-[1.25rem] font-heading text-white">Otávio Duarte</h3>
               <p className="text-[0.75rem] font-bold text-[#00AEEF] uppercase tracking-widest mb-1">
                 Fundador & Sócio Diretor
               </p>
-              <p className="text-[0.875rem] text-[#4D4D4D] font-lora leading-relaxed">
-                Administrador de Empresas e Contador, agregando mais de 25 anos de experiência contínua no ecossistema financeiro.
+              <p className="text-[0.875rem] text-white/80 font-barlow leading-relaxed">
+                Administrador de Empresas e Contador (Mais de 25 anos de experiência).
               </p>
             </div>
           </div>
 
-          <div className="flex flex-col mt-4 text-[0.875rem] text-[#4D4D4D] font-medium">
+          <div className="flex flex-col mt-4 text-[0.875rem] text-white/80 font-medium">
             <div className="flex items-center gap-3">
-              <Mail className="w-5 h-5 text-[#00AEEF] shrink-0" />
+              <Mail className="w-6 h-6 text-[#00AEEF] shrink-0" />
               <span>contato@ventoafinancial.com.br</span>
             </div>
           </div>
         </div>
 
         {/* Formulário Esquerda - Contato Rápido */}
-        <div className="order-1 lg:order-2 bg-[#1A2B47] p-8 md:p-10 rounded-2xl shadow-xl flex flex-col gap-6 h-fit translate-y-0 lg:-translate-y-24">
+        <div className="order-1 lg:order-2 lg:w-1/2 bg-white/5 p-8 md:p-10 rounded-2xl border border-white/10 flex flex-col gap-6 h-fit">
           
           <div className="flex flex-col gap-2">
-            <h2 className="text-[2rem] font-heading font-bold text-white tracking-tighter">Pronto para acelerar?</h2>
-            <p className="text-white/80 font-lora text-[1rem]">
-              Preencha os dados e receba uma análise inicial rápida sobre o perfil do seu negócio.
+            <h2 className="text-[2rem] font-heading font-bold text-white tracking-tighter leading-[0.9]">Solicite uma proposta online</h2>
+            <p className="text-white/80 font-barlow text-[1rem]">
+              Preencha os dados e entraremos em contato o mais breve possível.
             </p>
           </div>
 
           <form className="flex flex-col gap-5 mt-2">
             <div className="flex flex-col gap-2">
-              <label htmlFor="name" className="text-[0.75rem] uppercase tracking-widest font-bold text-white/70">Nome Completo</label>
+              <label htmlFor="name" className="text-[0.75rem] uppercase tracking-widest font-bold text-white/70">Nome</label>
               <Input 
                 id="name" 
                 placeholder="Seu nome" 
@@ -97,7 +97,7 @@ export function FooterContact() {
         </div>
       </div>
       
-      <div className="max-w-7xl mx-auto mt-8 pt-6 border-t border-[#E5E7EB] flex flex-col md:flex-row items-center justify-between text-[0.75rem] text-[#4D4D4D] font-lora gap-4">
+      <div className="max-w-7xl mx-auto mt-16 pt-6 border-t border-white/10 flex flex-col md:flex-row items-center justify-between text-[0.75rem] text-white/60 font-barlow gap-4">
         <p>© 2026 Ventoa Financial. Todos os direitos reservados.</p>
         <p>CNPJ: 00.000.000/0000-00</p>
       </div>
